@@ -1,0 +1,23 @@
+.formWrapper{
+    display: flex;
+    height: 48px;
+    align-items: stretch;
+}
+
+.search{
+    padding: 14px 20px;
+    height: 100%;
+    width: 502px;
+    border: 1px solid black;
+    border-radius: 8px 0px 0px 8px;
+
+}
+
+.searchButton{
+    padding: 14px 20px;
+    height: 100%;
+    width: 66px;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid var(--color-black);
+    border-left: none;
+}
