@@ -1,0 +1,40 @@
+.cardContainer{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 159px;
+}
+
+.cardBody{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 159px;
+    min-height: 205px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+.cardImage{
+    width: 150%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.cardText{
+    color: var(--color-white);
+    border-radius: 10px;
+    background-color: var(--color-black);
+    left: 8px;
+    bottom: 6px;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 4px 8px;
+}
+
+.cardTitle{
+    font-size: 14px;
+    font-weight: 400;
+}
