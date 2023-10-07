@@ -1,0 +1,31 @@
+.heroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 270px;
+}
+
+.heroTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroText1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    width: 473px;
+    height: 48px;
+    color: var(--color-white);
+}
+.heroText2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    width: 556px;
+    height: 48px;
+    color: var(--color-white)
+}
