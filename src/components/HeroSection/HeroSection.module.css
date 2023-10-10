@@ -4,6 +4,7 @@
     align-items: center;
     width: 100vw;
     height: 270px;
+    gap : 30px
 }
 
 .heroTextContainer{

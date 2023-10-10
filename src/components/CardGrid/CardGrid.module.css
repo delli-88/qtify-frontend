@@ -1,0 +1,32 @@
+.CardGridContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 43px;
+}
+
+.albumType{
+    display: flex;
+    justify-content: space-between;
+}
+
+.albumTypeText{
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.albumTypeButton{
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--color-black);
+    cursor: pointer;
+    border: none;
+}
+
+.CardGrid{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
