@@ -7,8 +7,10 @@ const CardGrid = ({albumType}) => {
 
     const [songsList, setSongsList] = useState([])
 
+
     useEffect(()=>{
         fetchSongs(albumType)
+        // eslint-disable-next-line
     },[])
 
     const fetchSongs = async(albumType) =>{
