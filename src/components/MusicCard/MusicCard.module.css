@@ -1,0 +1,37 @@
+.wrapper{
+    width: 160px;
+}
+
+.card{
+    position: relative;
+    width: 160px;
+    height: 205px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 42px;
+    width: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 6px;
+
+    .chip{
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+}
+
+.titleWrapper{
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
