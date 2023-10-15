@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import HeroSection from './components/HeroSection/HeroSection';
 import { fetchTopAlbums, fetchNewAlbums } from './api/api';
 import Section from './components/Section/Section';
-
+import ColorTabs from './components/Filter/Filter';
 
 function App() {
 
@@ -44,6 +44,7 @@ function App() {
         <Section data={topAlbumsData} type="album" title="Top Albums"/>
         <Section data={newAlbumsData} type="album" title="New Albums"/>
       </div>
+      <ColorTabs />
     </div>
   );
 }

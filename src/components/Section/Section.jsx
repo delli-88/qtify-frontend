@@ -12,12 +12,15 @@ const Section = ({title, data, type}) => {
     }
     return (
         <div className={styles.carouselWrapper}>
+            {type==="album" &&
             <div className={styles.header}>
                 <h3>{title}</h3>
                 <h4 className={styles.toggleText} onClick={handleCarousel}>
                     {carouselToggle?"Show All":"Collapse All"}
                 </h4>
             </div>
+            }
+
             {data.length === 0 ?(
                 <CircularProgress/>
                 ):(
