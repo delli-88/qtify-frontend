@@ -24,8 +24,8 @@ const Carousel = ({data, renderComponent}) => {
             <CarouselLeftNavigation />
             <CarouselRightNavigation />
             {
-                data.map((item)=>(
-                    <SwiperSlide>{renderComponent(item)}</SwiperSlide>
+                data.map((item, idx)=>(
+                    <SwiperSlide key={idx}>{renderComponent(item)}</SwiperSlide>
                 ))
             }
         </Swiper>

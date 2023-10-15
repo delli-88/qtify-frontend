@@ -39,3 +39,12 @@ export const fetchSongs = async() => {
         console.error(error)
     }
 }
+
+export const fetchFaqs = async() => {
+    try {
+        const res = await axios.get(`${BACKEND_POINT}/faq`)
+        return res.data.data
+    } catch (error) {
+        console.error(error)   
+    }
+}

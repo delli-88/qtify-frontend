@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import { fetchTopAlbums, fetchNewAlbums } from './api/api';
 import Section from './components/Section/Section';
 import ColorTabs from './components/Filter/Filter';
+import FaqAccordion from './components/FaqAccordion/FaqAccordion';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
         <Section data={newAlbumsData} type="album" title="New Albums"/>
       </div>
       <ColorTabs />
+      <FaqAccordion />
     </div>
   );
 }

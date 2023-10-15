@@ -2,7 +2,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { useState, useEffect } from 'react';
 import { fetchGenres, fetchSongs } from '../../api/api';
@@ -23,7 +22,7 @@ function CustomTabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
@@ -74,27 +73,19 @@ export default function BasicTabs() {
     }
   }
 
-  const filterSongs = (filterKey) => {
-    const filteredSongs = songs.filter((song)=>song.genre.key===filterKey)
-    return filterSongs
-  }
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    // const newFilterSongs = filterSongs(event.target.value)
-    // console.log(genres[newValue-1].key)
-    // // setSongs(newFilterSongs)
-    // console.log(event.target.label)
   };
 
   return (
     <Box className={styles.songsContainer} sx={{ width: '100%' }}>
         <h3>Songs</h3>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="songs tabs" textColor= "white" indicatorColor="primary">
+        <Tabs value={value} onChange={handleChange} aria-label="songs tabs" textColor= "inherit" indicatorColor="primary">
           <Tab label="All" {...a11yProps(0)}/>
           {genres.map((genre, idx)=>(
-            <Tab label={genre.label} {...a11yProps(idx + 1)} />
+            <Tab label={genre.label} {...a11yProps(idx + 1)} key={genre.key}/>
           ))}
         </Tabs>
       </Box>
@@ -103,7 +94,7 @@ export default function BasicTabs() {
       </CustomTabPanel>
       {
         genres.map((genre, idx)=>(
-            <CustomTabPanel value={value} index={idx + 1}>
+            <CustomTabPanel value={value} index={idx + 1} key={genre.key}>
                 {`Item ${idx + 1} ${genre.key}`}
             </CustomTabPanel>
         ))

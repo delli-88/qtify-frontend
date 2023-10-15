@@ -34,7 +34,7 @@ const Section = ({title, data, type}) => {
                                     }
                                 </div>
                             ):(
-                                <Carousel data={data} renderComponent={(data)=><MusicCard data={data} type={type}/>} />
+                                <Carousel data={data} renderComponent={(data)=><MusicCard data={data} type={type}/> }/>
                             )
                         }
                     </div>
