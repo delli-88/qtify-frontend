@@ -5,12 +5,7 @@
 }
 
 .search{
-    padding: 14px 20px;
-    height: 100%;
-    width: 502px;
-    border: 1px solid black;
-    border-radius: 8px 0px 0px 8px;
-
+    width: 35rem;
 }
 
 .searchButton{
@@ -20,4 +15,9 @@
     border-radius: 0px 8px 8px 0px;
     border: 1px solid var(--color-black);
     border-left: none;
+}
+
+#autocomplete{
+    padding: 4px;
+    color: var(--color-white);
 }

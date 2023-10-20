@@ -83,7 +83,6 @@ export default function BasicTabs() {
       setFilteredSongs(songs)
     }else{
       const songsFiltered = filterSongs(reqGenre)
-      console.log({songsFiltered})
       setFilteredSongs(songsFiltered)
     }
   };
