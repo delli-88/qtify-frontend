@@ -10,7 +10,7 @@ const HeroSection = () => {
             <p className={styles.heroText2}>Over thousands podcast episodes</p>
         </div>
         <div className={styles.heroImage}>
-          <img src={HeroImage} alt="HeroImage"/>
+          <img src={HeroImage} alt="HeroImage" className={styles.heroImage}/>
         </div>
     </div>
   )
